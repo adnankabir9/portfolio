@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -13,32 +14,220 @@
         <a href="#" class="logo"><span>Adnan Kabir</span></a>
 
         <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#certifications">Certifications</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">Visit Github</button>
+        <a href="https://github.com/adnankabir9" target="_blank" class="visit-btn">Visit GitHub</a>
     </header>
 
+    <section id="about" class="about">
+        <div class="about-container">
+            <!-- Image on the left -->
+            <img src="DSC08446.jpg" alt="Adnan Kabir">
+    
+            <!-- Text on the right -->
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Adnan Kabir</h1>
+                    <span>Computer Science & General Business Student at University of Maryland</span>
+                </div>
+            
+                <!-- Social Media Icons -->
+                <div class="socials">
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/adnankabir9" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                
+                    <!-- LinkedIn Icon -->
+                    <a href="https://linkedin.com/in/adnankabir9" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                
+                    <!-- Email Icon -->
+                    <a href="mailto:adnankabir.va@gmail.com" class="social-link">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                
+            </div>            
+        </div>
+    </section>
+    
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-container">
+            <!-- Teaching Assistant Card -->
+            <a href="https://wust.edu" target="_blank" class="experience-link">
+                <div class="experience-card">
+                    <!-- Icon above job title -->
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="job-title">Teaching Assistant, Python</h3>
+                    <p class="company-name">
+                        <span class="gradient-text">Washington University of Science and Technology</span>
+                    </p>
+                    <ul class="job-description">
+                        <li>Assisted in teaching Python programming to a diverse group of undergraduate students.</li>
+                        <li>Conducted lab and review sessions to reinforce lecture material and support individual students.</li>
+                        <li>Collaborated with professors to develop inclusive and accessible course materials.</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1: Mind Map -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <h3 class="project-title">Mind Map (Schedule App)</h3>
+                <p class="project-description">
+                    Developed a Flutter-based scheduling application that generates personalized schedules based on user input 
+                    such as attention span and motivation levels. Implemented algorithms tailored to different study methods 
+                    and connected schedules to a relational SQLite database for tracking.
+                </p>
+                <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>SQLite</span>
+                    <span>Git</span>
+                </div>
+                <a href="https://github.com/adnankabir9/ran_app" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+            </div>
+    
+            <!-- Project 2: Password Strength Checker -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h3 class="project-title">Password Strength Checker</h3>
+                <p class="project-description">
+                    Created a web-based password strength checker with backend APIs for entropy calculation, common password 
+                    detection, and leak verification using the "Have I Been Pwned" API. Dockerized the app for seamless deployment 
+                    and ensured security with comprehensive logging.
+                </p>
+                <div class="project-tech">
+                    <span>Flask</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>Docker</span>
+                </div>
+                <a href="https://github.com/adnankabir9/password-checker" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+            </div>
+    
+            <!-- Project 3: Portfolio -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-regular fa-id-card"></i>
+                </div>
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-description">
+                    Designed and developed a personal portfolio website to showcase my projects, experience, and skills. 
+                    Built a fully responsive design using HTML, CSS, and JavaScript, integrating animations for enhanced 
+                    user engagement. Utilized Font Awesome for icons and Google Fonts for typography.
+                </p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Font Awesome</span>
+                </div>
+                <a href="https://github.com/adnankabir9/portfolio" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skills-category">
+                <h3 class="skills-title"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+                <div class="skills-list">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>C</span>
+                    <span>HTML/CSS</span>
+                    <span>Dart</span>
+                    <span>Matlab</span>
+                </div>
+            </div>
+    
+            <!-- Frameworks & Libraries -->
+            <div class="skills-category">
+                <h3 class="skills-title"><i class="fa-solid fa-puzzle-piece"></i> Frameworks & Libraries</h3>
+                <div class="skills-list">
+                    <span>Flutter</span>
+                    <span>React</span>
+                    <span>Flask</span>
+                    <span>BeautifulSoup</span>
+                </div>
+            </div>
+    
+            <!-- Tools -->
+            <div class="skills-category">
+                <h3 class="skills-title"><i class="fa-solid fa-tools"></i> Tools</h3>
+                <div class="skills-list">
+                    <span>AWS</span>
+                    <span>VS Code</span>
+                    <span>Eclipse</span>
+                    <span>Android Studio</span>
+                    <span>Docker</span>
+                    <span>Git/GitHub</span>
+                    <span>CAD</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>SQLite</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <!-- Contact Item: Email -->
+            <div class="contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:adnankabir.va@gmail.com">adnankabir.va@gmail.com</a>
+            </div>
+    
+            <!-- Contact Item: LinkedIn -->
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/adnankabir9" target="_blank">LinkedIn </a>
+            </div>
+    
+            <!-- Contact Item: GitHub -->
+            <div class="contact-item">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/adnankabir9" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
