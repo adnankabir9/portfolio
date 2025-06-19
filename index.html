@@ -30,7 +30,7 @@
     <section id="about" class="about">
         <div class="about-container">
             <!-- Image on the left -->
-            <img src="DSC08446.jpg" alt="Adnan Kabir" class="about-img animate-slide-in-left">
+            <img src="IMG_1437.JPG" alt="Adnan Kabir" class="about-img animate-slide-in-left">
             
             <!-- Text on the right -->
             <div class="info-box">
@@ -59,25 +59,70 @@
     
     <section id="experience" class="experience">
         <h2 class="section-title">Experience</h2>
-        <div class="experience-container">
-            <!-- Teaching Assistant Card -->
-            <a href="https://wust.edu" target="_blank" class="experience-link">
-                <div class="experience-card">
-                    <!-- Icon above job title -->
-                    <div class="icon">
-                        <i class="fa-solid fa-laptop-code"></i>
-                    </div>
-                    <h3 class="job-title">Teaching Assistant, Python</h3>
-                    <p class="company-name">
-                        <span class="gradient-text">Washington University of Science and Technology</span>
-                    </p>
-                    <ul class="job-description">
-                        <li>Assisted in teaching Python programming to a diverse group of undergraduate students.</li>
-                        <li>Conducted lab and review sessions to reinforce lecture material and support individual students.</li>
-                        <li>Collaborated with professors to develop inclusive and accessible course materials.</li>
-                    </ul>
+        <div class="experience-grid">
+            <!-- MeStock - Current Internship -->
+            <div class="experience-card">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
-            </a>
+                <h3 class="job-title">Software Developer Intern</h3>
+                <p class="company-name">
+                    <span class="gradient-text">MeStock</span>
+                </p>
+                <ul class="job-description">
+                    <li>Currently working as a Software Developer Intern for summer 2025.</li>
+                    <li>Developing software solutions and gaining hands-on experience in the financial technology sector.</li>
+                    <li>Collaborating with the development team on various software projects and learning industry best practices.</li>
+                </ul>
+            </div>
+
+            <!-- Booz Allen Hamilton -->
+            <div class="experience-card">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="job-title">Full Stack Engineer</h3>
+                <p class="company-name">
+                    <span class="gradient-text">Booz Allen Hamilton</span>
+                </p>
+                <ul class="job-description">
+                    <li>Developed a containerized Next.js application to automate insurance policy auditing, reducing manual effort and saving over $50,000.</li>
+                    <li>Built a role-based authentication system using Passport.js and Express.js, ensuring secure access control.</li>
+                    <li>Collaborated with a 10-person development team to integrate Next.js, Tailwind CSS, Node.js, and Docker, leveraging BART, PyTesseract, and Beautiful Soup to enhance data processing and deployment efficiency.</li>
+                </ul>
+            </div>
+
+            <!-- iOS & Web Development -->
+            <div class="experience-card">
+                <div class="icon">
+                    <i class="fa-solid fa-mobile-alt"></i>
+                </div>
+                <h3 class="job-title">iOS & Web Developer</h3>
+                <p class="company-name">
+                    <span class="gradient-text">Freelance</span>
+                </p>
+                <ul class="job-description">
+                    <li>Created 20+ applications, including a schedule management app (MindMap), a calorie tracker, and a note-taking app, alongside projects in productivity, health, and e-commerce domains.</li>
+                    <li>Implemented advanced features such as offline functionality, push notifications, RESTful API integrations, and real-time data analytics.</li>
+                    <li>Built scalable applications using Flutter, Dart, Xcode, SQLite, and AWS services.</li>
+                </ul>
+            </div>
+
+            <!-- Teaching Assistant -->
+            <div class="experience-card">
+                <div class="icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="job-title">Teaching Assistant, Python</h3>
+                <p class="company-name">
+                    <span class="gradient-text">Washington University of Science and Technology</span>
+                </p>
+                <ul class="job-description">
+                    <li>Assisted in teaching Python programming to 50+ undergraduate students, including many from foreign countries, helping them adapt to the curriculum and overcome language barriers.</li>
+                    <li>Conducted 20+ weekly lab and review sessions, delivering individualized instruction that helped maintain a 92% course completion rate across all student demographics.</li>
+                    <li>Collaborated with professors and other teaching assistants to develop course materials, focusing on inclusivity and accessibility for international students.</li>
+                </ul>
+            </div>
         </div>
     </section>
     
@@ -85,7 +130,30 @@
     <section id="projects" class="projects">
         <h2 class="section-title">Projects</h2>
         <div class="projects-container">
-            <!-- Project 1: Mind Map -->
+            <!-- Project 1: VillaVoice -->
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fa-solid fa-home"></i>
+                </div>
+                <h3 class="project-title">VillaVoice</h3>
+                <p class="project-description">
+                    Engineered a voice-enabled real estate search assistant using AWS Lex that successfully identified 6 key property criteria 
+                    with 92% accuracy, reducing search time by 65% compared to traditional methods. Implemented serverless architecture 
+                    with AWS Lambda functions that processed over 200 property queries per minute.
+                </p>
+                <div class="project-tech">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>AWS</span>
+                    <span>OpenAI API</span>
+                    <span>AWS Lex</span>
+                </div>
+                <a href="https://github.com/R1tMah/real-estate-assistant" target="_blank" class="project-link">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                </a>
+            </div>
+
+            <!-- Project 2: Mind Map -->
             <div class="project-card">
                 <div class="project-icon">
                     <i class="fa-regular fa-calendar-days"></i>
@@ -107,7 +175,7 @@
                 </a>
             </div>
     
-            <!-- Project 2: Password Strength Checker -->
+            <!-- Project 3: Password Strength Checker -->
             <div class="project-card">
                 <div class="project-icon">
                     <i class="fa-solid fa-lock"></i>
@@ -129,7 +197,7 @@
                 </a>
             </div>
     
-            <!-- Project 3: Portfolio -->
+            <!-- Project 4: Portfolio -->
             <div class="project-card">
                 <div class="project-icon">
                     <i class="fa-regular fa-id-card"></i>
@@ -165,6 +233,8 @@
                     <span>JavaScript</span>
                     <span>C</span>
                     <span>HTML/CSS</span>
+                    <span>SQL</span>
+                    <span>Swift</span>
                     <span>Dart</span>
                     <span>Matlab</span>
                 </div>
@@ -176,22 +246,27 @@
                 <div class="skills-list">
                     <span>Flutter</span>
                     <span>React</span>
+                    <span>Next.js</span>
+                    <span>Express.js</span>
+                    <span>Node.js</span>
                     <span>Flask</span>
+                    <span>Tailwind CSS</span>
                     <span>BeautifulSoup</span>
                 </div>
             </div>
     
-            <!-- Tools -->
+            <!-- Tools & Databases -->
             <div class="skills-category">
-                <h3 class="skills-title"><i class="fa-solid fa-tools"></i> Tools</h3>
+                <h3 class="skills-title"><i class="fa-solid fa-tools"></i> Tools & Databases</h3>
                 <div class="skills-list">
                     <span>AWS</span>
-                    <span>VS Code</span>
-                    <span>Eclipse</span>
-                    <span>Android Studio</span>
                     <span>Docker</span>
                     <span>Git/GitHub</span>
-                    <span>CAD</span>
+                    <span>VS Code</span>
+                    <span>Eclipse</span>
+                    <span>Xcode</span>
+                    <span>Android Studio</span>
+                    <span>Figma</span>
                     <span>PostgreSQL</span>
                     <span>MySQL</span>
                     <span>SQLite</span>
