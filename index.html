@@ -3,54 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Adnan Kabir | Software Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
     <header class="header">
-        <a href="#" class="logo"><span>Adnan Kabir</span></a>
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            <span>AK</span>
+            <span class="logo-bracket">/&gt;</span>
+        </a>
 
         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <a href="https://github.com/adnankabir9" target="_blank" class="visit-btn">Visit GitHub</a>
+        <a href="https://github.com/adnankabir9" target="_blank" class="visit-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <!-- Image on the left -->
-            <img src="IMG_1437.JPG" alt="Adnan Kabir" class="about-img animate-slide-in-left">
-            
-            <!-- Text on the right -->
-            <div class="info-box">
-                <div class="text">
-                    <h3 class="animate-fade-in">Hi, I'm</h3>
-                    <h1 class="animate-fade-in-delay">Adnan Kabir</h1>
-                    <span class="animate-fade-in-delay-2">
-                        Computer Science & General Business Student at University of Maryland
-                    </span>
-                </div>
-                <div class="socials">
-                    <a href="https://github.com/adnankabir9" target="_blank" class="social-link animate-pulse">
-                        <i class="fa-brands fa-github"></i>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Adnan Kabir</h1>
+                <h2 class="hero-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Computer Science & General Business student at University of Maryland, 
+                    passionate about building innovative software solutions and creating impactful user experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="https://linkedin.com/in/adnankabir9" target="_blank" class="social-link animate-pulse">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:adnankabir.va@gmail.com" class="social-link animate-pulse">
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
                         <i class="fa-regular fa-envelope"></i>
                     </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/adnankabir9" target="_blank" class="hero-social-link" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/adnankabir9" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:adnankabir.va@gmail.com" class="hero-social-link" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="adnanpic.png" alt="Adnan Kabir" class="hero-image">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Developer</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>UMD '26</span>
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fa-brands fa-aws"></i>
+                    <span>AWS Certified</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-number">01.</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-paragraph">
+                    I'm a <strong>Computer Science major</strong> with a double minor in <strong>General Business</strong> 
+                    and <strong>Data Science</strong> at the <strong>University of Maryland</strong>. I love building software 
+                    that actually solves problems people face.
+                </p>
+                <p class="about-paragraph">
+                    I've gotten to work with some great teams at places like <strong>AG Business Solutions</strong>, 
+                    <strong>Booz Allen Hamilton</strong>, and <strong>MeStock</strong>, building everything from AI platforms 
+                    to mobile apps. Most of my work involves full-stack development, cloud infrastructure, and finding creative 
+                    ways to automate tedious tasks.
+                </p>
+                <p class="about-paragraph">
+                    Right now I'm really into working with AI/ML tools, building scalable web apps, and figuring out how to 
+                    make data pipelines actually work smoothly. I think the best code is the kind that makes someone's job easier 
+                    or saves them time they'd rather spend doing something else.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">20+</h3>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">3+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Students Taught</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="interests-section">
+            <h3 class="interests-title">Beyond the Code</h3>
+            
+            <div class="interests-grid">
+                <!-- Fitness & Sports -->
+                <div class="interest-card sports-card" onclick="showSportsPage()">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <h4 class="interest-card-title">Fitness & Sports</h4>
+                    <p class="interest-description">
+                        Hitting the gym and watching hoops. Click to see my team and favorite players.
+                    </p>
+                </div>
+
+                <div class="interest-card games-card" onclick="showGamesPage()">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-chess-board"></i>
+                    </div>
+                    <h4 class="interest-card-title">Board/Card Games</h4>
+                    <p class="interest-description">
+                        Game nights hit different. Click to see my top picks.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-diamond"></i>
+                    </div>
+                    <h4 class="interest-card-title">Playing Cards</h4>
+                    <p class="interest-description">
+                        Collecting unique playing card decks. Each one has its own design story.
+                    </p>
+                </div>
+
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h4 class="interest-card-title">Tech</h4>
+                    <p class="interest-description">
+                        Love exploring the latest gadgets, peripherals, and productivity tools.
+                    </p>
+                </div>
+
+                <div class="interest-card movies-card" onclick="showMoviesPage()">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <h4 class="interest-card-title">Movies & Shows</h4>
+                    <p class="interest-description">
+                        Click to see my favorites.
+                    </p>
+                </div>
+
+                <div class="interest-card music-card" onclick="showMusicPage()">
+                    <div class="interest-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h4 class="interest-card-title">Music</h4>
+                    <p class="interest-description">
+                        Always listening to something. Click to see my top artists and genres from Spotify.
+                    </p>
                 </div>
             </div>
         </div>
@@ -58,260 +220,741 @@
     
     
     <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-grid">
-            <!-- MeStock - Current Internship -->
-            <div class="experience-card">
-                <div class="icon">
-                    <i class="fa-solid fa-chart-line"></i>
+        <div class="section-header">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="timeline">
+            <!-- AG Business Solutions - Current Internship -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Aug 2025 - Dec 2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="card-title-section">
+                                <h3 class="card-title">AI/ML & Data Engineer Intern</h3>
+                                <p class="card-company">AG Business Solutions, LLC</p>
+                                <p class="card-location"><i class="fa-solid fa-location-dot"></i> McLean, VA</p>
+                            </div>
+                        </div>
+                        <ul class="card-description">
+                            <li>Developed an AI-powered platform to automate accounting workflows for mid-sized firms</li>
+                            <li>Built data pipelines to integrate accounting APIs and streamline business operations</li>
+                            <li>Deployed scalable cloud infrastructure for document processing and data management</li>
+                            <li>Implemented AI models for document classification and intelligent parsing</li>
+                        </ul>
+                        <div class="card-tags">
+                            <span>Python</span>
+                            <span>Node.js</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS S3</span>
+                            <span>Docker</span>
+                            <span>Terraform</span>
+                            <span>LangChain</span>
+                            <span>OpenAI</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="job-title">Software Developer Intern</h3>
-                <p class="company-name">
-                    <span class="gradient-text">MeStock</span>
-                </p>
-                <ul class="job-description">
-                    <li>Currently working as a Software Developer Intern for summer 2025.</li>
-                    <li>Developing software solutions and gaining hands-on experience in the financial technology sector.</li>
-                    <li>Collaborating with the development team on various software projects and learning industry best practices.</li>
-                </ul>
+            </div>
+
+            <!-- MeStock -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2025 - Aug 2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="card-title-section">
+                                <h3 class="card-title">Software Development Intern</h3>
+                                <p class="card-company">MeStock</p>
+                                <p class="card-location"><i class="fa-solid fa-location-dot"></i> Dover, DE</p>
+                            </div>
+                        </div>
+                        <ul class="card-description">
+                            <li>Developed a mobile trading application with real-time portfolio tracking features</li>
+                            <li>Built automated testing infrastructure and deployment pipelines to improve app reliability</li>
+                            <li>Integrated monetization features to enhance revenue generation</li>
+                        </ul>
+                        <div class="card-tags">
+                            <span>Flutter</span>
+                            <span>AWS Amplify</span>
+                            <span>CI/CD</span>
+                            <span>Appium</span>
+                            <span>AdMob</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Booz Allen Hamilton -->
-            <div class="experience-card">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Feb 2025 - May 2025</div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="card-title-section">
+                                <h3 class="card-title">Full-Stack Engineer</h3>
+                                <p class="card-company">Booz Allen Hamilton - App Dev Club</p>
+                                <p class="card-location"><i class="fa-solid fa-location-dot"></i> College Park, MD</p>
+                            </div>
+                        </div>
+                        <ul class="card-description">
+                            <li>Built an automated insurance policy auditing system with document processing capabilities</li>
+                            <li>Engineered role-based authentication and data workflows to process policy documents</li>
+                            <li>Collaborated in an Agile environment to deliver production-ready deployments</li>
+                        </ul>
+                        <div class="card-tags">
+                            <span>Next.js</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS Lambda</span>
+                            <span>Docker</span>
+                            <span>Tesseract OCR</span>
+                            <span>ETL</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="job-title">Full Stack Engineer</h3>
-                <p class="company-name">
-                    <span class="gradient-text">Booz Allen Hamilton</span>
-                </p>
-                <ul class="job-description">
-                    <li>Developed a containerized Next.js application to automate insurance policy auditing, reducing manual effort and saving over $50,000.</li>
-                    <li>Built a role-based authentication system using Passport.js and Express.js, ensuring secure access control.</li>
-                    <li>Collaborated with a 10-person development team to integrate Next.js, Tailwind CSS, Node.js, and Docker, leveraging BART, PyTesseract, and Beautiful Soup to enhance data processing and deployment efficiency.</li>
-                </ul>
-            </div>
-
-            <!-- iOS & Web Development -->
-            <div class="experience-card">
-                <div class="icon">
-                    <i class="fa-solid fa-mobile-alt"></i>
-                </div>
-                <h3 class="job-title">iOS & Web Developer</h3>
-                <p class="company-name">
-                    <span class="gradient-text">Freelance</span>
-                </p>
-                <ul class="job-description">
-                    <li>Created 20+ applications, including a schedule management app (MindMap), a calorie tracker, and a note-taking app, alongside projects in productivity, health, and e-commerce domains.</li>
-                    <li>Implemented advanced features such as offline functionality, push notifications, RESTful API integrations, and real-time data analytics.</li>
-                    <li>Built scalable applications using Flutter, Dart, Xcode, SQLite, and AWS services.</li>
-                </ul>
             </div>
 
             <!-- Teaching Assistant -->
-            <div class="experience-card">
-                <div class="icon">
-                    <i class="fa-solid fa-laptop-code"></i>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2024 - Aug 2024</div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <div class="card-title-section">
+                                <h3 class="card-title">Teaching Assistant, Python</h3>
+                                <p class="card-company">Washington University of Science and Technology</p>
+                                <p class="card-location"><i class="fa-solid fa-location-dot"></i> Alexandria, VA</p>
+                            </div>
+                        </div>
+                        <ul class="card-description">
+                            <li>Led weekly lab sessions teaching programming concepts through hands-on exercises</li>
+                            <li>Provided one-on-one support for debugging and software design concepts</li>
+                            <li>Mentored students on development best practices and coding fundamentals</li>
+                        </ul>
+                        <div class="card-tags">
+                            <span>Python</span>
+                            <span>Git</span>
+                            <span>Teaching</span>
+                            <span>Mentorship</span>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="job-title">Teaching Assistant, Python</h3>
-                <p class="company-name">
-                    <span class="gradient-text">Washington University of Science and Technology</span>
-                </p>
-                <ul class="job-description">
-                    <li>Assisted in teaching Python programming to 50+ undergraduate students, including many from foreign countries, helping them adapt to the curriculum and overcome language barriers.</li>
-                    <li>Conducted 20+ weekly lab and review sessions, delivering individualized instruction that helped maintain a 92% course completion rate across all student demographics.</li>
-                    <li>Collaborated with professors and other teaching assistants to develop course materials, focusing on inclusivity and accessibility for international students.</li>
-                </ul>
             </div>
         </div>
     </section>
     
     
     <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-container">
+        <div class="section-header">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="projects-grid">
             <!-- Project 1: VillaVoice -->
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-solid fa-home"></i>
+            <div class="project-card featured">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="fa-solid fa-home"></i>
+                    </div>
                 </div>
-                <h3 class="project-title">VillaVoice</h3>
-                <p class="project-description">
-                    Engineered a voice-enabled real estate search assistant using AWS Lex that successfully identified 6 key property criteria 
-                    with 92% accuracy, reducing search time by 65% compared to traditional methods. Implemented serverless architecture 
-                    with AWS Lambda functions that processed over 200 property queries per minute.
-                </p>
-                <div class="project-tech">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>AWS</span>
-                    <span>OpenAI API</span>
-                    <span>AWS Lex</span>
+                <div class="project-content">
+                    <span class="project-label">Featured Project</span>
+                    <h3 class="project-title">VillaVoice</h3>
+                    <div class="project-description-box">
+                        <p class="project-description">
+                            Engineered a voice-enabled real estate search assistant using <strong>AWS Lex</strong> that identified 
+                            6 key property criteria with <strong>92% accuracy</strong>, reducing search time by <strong>65%</strong>. 
+                            Implemented serverless architecture with AWS Lambda processing <strong>200+ queries/minute</strong>.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>AWS Lex</span>
+                        <span>Lambda</span>
+                        <span>OpenAI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/R1tMah/real-estate-assistant" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://github.com/R1tMah/real-estate-assistant" target="_blank" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://github.com/R1tMah/real-estate-assistant" target="_blank" class="project-link">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
-                </a>
             </div>
 
             <!-- Project 2: Mind Map -->
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-regular fa-calendar-days"></i>
+            <div class="project-card featured">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
                 </div>
-                <h3 class="project-title">Mind Map (Schedule App)</h3>
-                <p class="project-description">
-                    Developed a Flutter-based scheduling application that generates personalized schedules based on user input 
-                    such as attention span and motivation levels. Implemented algorithms tailored to different study methods 
-                    and connected schedules to a relational SQLite database for tracking.
-                </p>
-                <div class="project-tech">
-                    <span>Flutter</span>
-                    <span>Dart</span>
-                    <span>SQLite</span>
-                    <span>Git</span>
+                <div class="project-content">
+                    <span class="project-label">Featured Project</span>
+                    <h3 class="project-title">Mind Map</h3>
+                    <div class="project-description-box">
+                        <p class="project-description">
+                            Flutter-based scheduling application generating personalized schedules based on attention span 
+                            and motivation levels. Implemented custom algorithms for different study methods with SQLite 
+                            integration for comprehensive progress tracking and analytics.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>SQLite</span>
+                        <span>Git</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/adnankabir9/ran_app" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://github.com/adnankabir9/ran_app" target="_blank" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://github.com/adnankabir9/ran_app" target="_blank" class="project-link">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
-                </a>
             </div>
-    
+
             <!-- Project 3: Password Strength Checker -->
             <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-solid fa-lock"></i>
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
                 </div>
-                <h3 class="project-title">Password Strength Checker</h3>
-                <p class="project-description">
-                    Created a web-based password strength checker with backend APIs for entropy calculation, common password 
-                    detection, and leak verification using the "Have I Been Pwned" API. Dockerized the app for seamless deployment 
-                    and ensured security with comprehensive logging.
-                </p>
-                <div class="project-tech">
-                    <span>Flask</span>
-                    <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>Docker</span>
+                <div class="project-content">
+                    <h3 class="project-title">Password Strength Checker</h3>
+                    <p class="project-description">
+                        Web-based password strength checker with backend APIs for entropy calculation, common password 
+                        detection, and leak verification using "Have I Been Pwned" API. Dockerized for seamless deployment.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flask</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/adnankabir9/password-checker" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://github.com/adnankabir9/password-checker" target="_blank" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://github.com/adnankabir9/password-checker" target="_blank" class="project-link">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
-                </a>
             </div>
-    
+
             <!-- Project 4: Portfolio -->
             <div class="project-card">
-                <div class="project-icon">
-                    <i class="fa-regular fa-id-card"></i>
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="fa-regular fa-id-card"></i>
+                    </div>
                 </div>
-                <h3 class="project-title">Portfolio Website</h3>
-                <p class="project-description">
-                    Designed and developed a personal portfolio website to showcase my projects, experience, and skills. 
-                    Built a fully responsive design using HTML, CSS, and JavaScript, integrating animations for enhanced 
-                    user engagement. Utilized Font Awesome for icons and Google Fonts for typography.
-                </p>
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Font Awesome</span>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        Modern, responsive personal portfolio showcasing projects, experience, and skills. Built with 
+                        vanilla JavaScript featuring smooth animations, scroll effects, and optimized performance.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/adnankabir9/portfolio" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://github.com/adnankabir9/portfolio" target="_blank" class="project-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="https://github.com/adnankabir9/portfolio" target="_blank" class="project-link">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
-                </a>
             </div>
         </div>
     </section>
     
     <section id="skills" class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-container">
+        <div class="section-header">
+            <span class="section-number">04.</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="skills-grid">
             <!-- Programming Languages -->
-            <div class="skills-category">
-                <h3 class="skills-title"><i class="fa-solid fa-code"></i> Programming Languages</h3>
-                <div class="skills-list">
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>JavaScript</span>
-                    <span>C</span>
-                    <span>HTML/CSS</span>
-                    <span>SQL</span>
-                    <span>Swift</span>
-                    <span>Dart</span>
-                    <span>Matlab</span>
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="skill-category-title">Languages</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Swift</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
+
             <!-- Frameworks & Libraries -->
-            <div class="skills-category">
-                <h3 class="skills-title"><i class="fa-solid fa-puzzle-piece"></i> Frameworks & Libraries</h3>
-                <div class="skills-list">
-                    <span>Flutter</span>
-                    <span>React</span>
-                    <span>Next.js</span>
-                    <span>Express.js</span>
-                    <span>Node.js</span>
-                    <span>Flask</span>
-                    <span>Tailwind CSS</span>
-                    <span>BeautifulSoup</span>
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="skill-category-title">Frameworks</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">React / Next.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js / Express</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Flutter</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Tailwind CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
-            <!-- Tools & Databases -->
-            <div class="skills-category">
-                <h3 class="skills-title"><i class="fa-solid fa-tools"></i> Tools & Databases</h3>
-                <div class="skills-list">
-                    <span>AWS</span>
-                    <span>Docker</span>
-                    <span>Git/GitHub</span>
-                    <span>VS Code</span>
-                    <span>Eclipse</span>
-                    <span>Xcode</span>
-                    <span>Android Studio</span>
-                    <span>Figma</span>
-                    <span>PostgreSQL</span>
-                    <span>MySQL</span>
-                    <span>SQLite</span>
+
+            <!-- Tools & Cloud -->
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="skill-category-title">Tools & Cloud</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">AWS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git / GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PostgreSQL / MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section id="certifications" class="certifications">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certifications-container">
-            <div class="certification-card">
-                <i class="fa-solid fa-cloud certification-icon"></i>
-                <h3 class="certification-title">AWS Certified Cloud Practitioner</h3>
-                <p class="certification-issuer">Amazon Web Services</p>
-                <a href="https://www.credly.com/badges/7e6e825e-ae72-4b46-93a6-1b18efd6de2d/" target="_blank" class="certification-link">
-                    <i class="fa-solid fa-link"></i> View Certificate
+
+        <!-- Certification Highlight -->
+        <div class="certification-highlight">
+            <div class="cert-badge">
+                <i class="fa-brands fa-aws"></i>
+            </div>
+            <div class="cert-content">
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <p>Amazon Web Services</p>
+                <a href="https://www.credly.com/badges/7e6e825e-ae72-4b46-93a6-1b18efd6de2d/" target="_blank" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-            <!-- Contact Item: Email -->
-            <div class="contact-item">
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:adnankabir.va@gmail.com">adnankabir.va@gmail.com</a>
-            </div>
+        <div class="section-header">
+            <span class="section-number">05.</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="contact-content">
+            <p class="contact-description">
+                I'm currently looking for new opportunities and my inbox is always open. Whether you have 
+                a question, want to collaborate on a project, or just want to say hi, I'll do my best to get back to you!
+            </p>
+            
+            <div class="contact-methods">
+                <a href="mailto:adnankabir.va@gmail.com" class="contact-method">
+                    <div class="method-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="method-info">
+                        <span class="method-label">Email</span>
+                        <span class="method-value">adnankabir.va@gmail.com</span>
+                    </div>
+                </a>
     
-            <!-- Contact Item: LinkedIn -->
-            <div class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <a href="https://linkedin.com/in/adnankabir9" target="_blank">LinkedIn </a>
-            </div>
+                <a href="https://linkedin.com/in/adnankabir9" target="_blank" class="contact-method">
+                    <div class="method-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="method-info">
+                        <span class="method-label">LinkedIn</span>
+                        <span class="method-value">linkedin.com/in/adnankabir9</span>
+                    </div>
+                </a>
     
-            <!-- Contact Item: GitHub -->
-            <div class="contact-item">
-                <i class="fa-brands fa-github"></i>
-                <a href="https://github.com/adnankabir9" target="_blank">GitHub</a>
+                <a href="https://github.com/adnankabir9" target="_blank" class="contact-method">
+                    <div class="method-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="method-info">
+                        <span class="method-label">GitHub</span>
+                        <span class="method-value">github.com/adnankabir9</span>
+                    </div>
+                </a>
             </div>
+
+            <a href="mailto:adnankabir.va@gmail.com" class="btn btn-primary contact-btn">
+                <span>Say Hello</span>
+                <i class="fa-regular fa-paper-plane"></i>
+            </a>
         </div>
     </section>
-    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Designed & Built by <strong>Adnan Kabir</strong></p>
+            <div class="footer-socials">
+                <a href="https://github.com/adnankabir9" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/adnankabir9" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:adnankabir.va@gmail.com" aria-label="Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Games Overlay -->
+    <div id="gamesOverlay" class="games-overlay">
+        <div class="games-container">
+            <button class="close-games-btn" onclick="closeGamesPage()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="games-header">
+                <i class="fas fa-gamepad games-icon"></i>
+                <h2>My Game Collection</h2>
+                <p class="games-subtitle">Game nights are always a vibe</p>
+            </div>
+
+            <div class="games-content">
+                <div class="top-games">
+                    <h3><i class="fas fa-trophy"></i> Top 3 Games</h3>
+                    <div class="games-grid">
+                        <div class="game-card">
+                            <div class="game-rank">#1</div>
+                            <div class="game-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <h4 class="game-name">Catan</h4>
+                            <p class="game-desc">Resource trading and strategy. Gets competitive fast.</p>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-rank">#2</div>
+                            <div class="game-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h4 class="game-name">Monopoly Deal</h4>
+                            <p class="game-desc">Monopoly but actually fun and doesn't take forever.</p>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-rank">#3</div>
+                            <div class="game-icon">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <h4 class="game-name">Coup</h4>
+                            <p class="game-desc">Quick bluffing game. Everyone's lying, including you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="honorary-mention">
+                    <h3><i class="fas fa-star"></i> Honorary Mention</h3>
+                    <div class="honorary-card">
+                        <div class="honorary-icon">
+                            <i class="fas fa-spade"></i>
+                        </div>
+                        <div class="honorary-content">
+                            <h4>Poker</h4>
+                            <p>Classic. Always good for late nights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sports Overlay -->
+    <div id="sportsOverlay" class="sports-overlay">
+        <div class="sports-container">
+            <button class="close-sports-btn" onclick="closeSportsPage()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="sports-header">
+                <i class="fas fa-basketball sports-icon"></i>
+                <h2>Basketball</h2>
+                <p class="sports-subtitle">My favorite team and players</p>
+            </div>
+
+            <div class="sports-content">
+                <div class="favorite-team">
+                    <h3><i class="fas fa-trophy"></i> Favorite Team</h3>
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="celticslogo.jpg" alt="Boston Celtics Logo">
+                        </div>
+                        <h4 class="team-name">Boston Celtics</h4>
+                    </div>
+                </div>
+
+                <div class="top-players">
+                    <h3><i class="fas fa-star"></i> Top 3 Players</h3>
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-rank">#1</div>
+                            <div class="player-icon">
+                                <img src="jayson_tatum.jpg" alt="Jayson Tatum" class="tatum-img">
+                            </div>
+                            <h4 class="player-name">Jayson Tatum</h4>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-rank">#2</div>
+                            <div class="player-icon">
+                                <img src="anthony_edwards.jpg" alt="Anthony Edwards">
+                            </div>
+                            <h4 class="player-name">Anthony Edwards</h4>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-rank">#3</div>
+                            <div class="player-icon">
+                                <img src="derrick_white.webp" alt="Derrick White">
+                            </div>
+                            <h4 class="player-name">Derrick White</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Overlay -->
+    <div id="musicOverlay" class="music-overlay">
+        <div class="music-container">
+            <button class="close-music-btn" onclick="closeMusicPage()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="music-header">
+                <i class="fas fa-music music-icon"></i>
+                <h2>My Music Taste</h2>
+                <p class="music-subtitle">What I'm constantly listening to on Spotify</p>
+            </div>
+
+            <div class="music-content">
+                <div class="top-artists">
+                    <h3><i class="fas fa-star"></i> Top 5 Artists</h3>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="artists-carousel">
+                            <div class="artist-card active">
+                                <div class="artist-image">
+                                    <img src="lil_tecca.jpeg" alt="Lil Tecca">
+                                    <span class="artist-rank">#1</span>
+                                </div>
+                                <span class="artist-name">Lil Tecca</span>
+                            </div>
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="kid_laroi.avif" alt="The Kid LAROI">
+                                    <span class="artist-rank">#2</span>
+                                </div>
+                                <span class="artist-name">The Kid LAROI</span>
+                            </div>
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="don_toliver.webp" alt="Don Toliver">
+                                    <span class="artist-rank">#3</span>
+                                </div>
+                                <span class="artist-name">Don Toliver</span>
+                            </div>
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="partynextdoor.jpeg" alt="PARTYNEXTDOOR">
+                                    <span class="artist-rank">#4</span>
+                                </div>
+                                <span class="artist-name">PARTYNEXTDOOR</span>
+                            </div>
+                            <div class="artist-card">
+                                <div class="artist-image">
+                                    <img src="arijit_singh.jpeg" alt="Arijit Singh">
+                                    <span class="artist-rank">#5</span>
+                                </div>
+                                <span class="artist-name">Arijit Singh</span>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="moveCarousel(1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                    </div>
+                </div>
+
+                <div class="music-genres">
+                    <h3><i class="fas fa-compact-disc"></i> Favorite Genres</h3>
+                    <div class="genres-list">
+                        <span class="genre-tag">Melodic Rap</span>
+                        <span class="genre-tag">Desi</span>
+                        <span class="genre-tag">Dark R&B</span>
+                        <span class="genre-tag">Pop</span>
+                        <span class="genre-tag">House/EDM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Movies Overlay -->
+    <div id="moviesOverlay" class="movies-overlay">
+        <div class="movies-container">
+            <button class="close-movies-btn" onclick="closeMoviesPage()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="movies-header">
+                <i class="fas fa-tv movies-icon"></i>
+                <h2>My Favorites</h2>
+                <p class="movies-subtitle">What I'm watching on repeat</p>
+            </div>
+
+            <div class="movies-content">
+                <div class="favorite-movie">
+                    <h3><i class="fas fa-film"></i> Favorite Movie</h3>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="inception.jpg" alt="Inception Movie Poster">
+                        </div>
+                        <h4 class="movie-name">Inception</h4>
+                    </div>
+                </div>
+
+                <div class="favorite-show">
+                    <h3><i class="fas fa-star"></i> Favorite Show</h3>
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="friendsshow.jpg" alt="Friends Show Poster">
+                        </div>
+                        <h4 class="show-name">Friends</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
